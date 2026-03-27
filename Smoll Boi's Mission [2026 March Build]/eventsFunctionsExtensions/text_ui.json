@@ -1,0 +1,2412 @@
+{
+  "author": "",
+  "category": "",
+  "dimension": "",
+  "extensionNamespace": "",
+  "fullName": "text_ui",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "text_ui",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "Originally automatically extracted from events of the project",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [
+    {
+      "name": "Conversation_Number",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Conversation_Line",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Third_Character_Appear",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Two_Characters_Speaking",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Character_Speaking",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Conversation",
+      "type": "boolean",
+      "value": false
+    }
+  ],
+  "eventsFunctions": [
+    {
+      "description": "Hides the conversation ui thingys",
+      "fullName": "Hides the conversation ui thingys",
+      "functionType": "Action",
+      "group": "Text Ui",
+      "name": "Hide_The_Conversation_Ui_Things",
+      "sentence": "Hide the conversation ui things using _PARAM1_, _PARAM3_, _PARAM5_, _PARAM7_, _PARAM8_, _PARAM10_, _PARAM12_, _PARAM14_, ",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Conversation_Icons",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "\"107;107;107\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "\"107;107;107\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "\"107;107;107\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Conversation_Background",
+                "=",
+                "0",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Conversation_Background",
+                "Tween",
+                "\"fade\"",
+                "0",
+                "\"swingTo\"",
+                "0.3",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Text_Box",
+                "Tween",
+                "\"go here\"",
+                "64",
+                "-290",
+                "\"easeTo\"",
+                "0.2",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Character_Name",
+                "Tween",
+                "\"go here\"",
+                "96",
+                "-255",
+                "\"swingTo\"",
+                "0.2",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Character_Text_Lines",
+                "Tween",
+                "\"go here\"",
+                "96",
+                "-255",
+                "\"swingTo\"",
+                "0.2",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"going off screen\"",
+                "-737",
+                "336",
+                "\"swingTo\"",
+                "0.3",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"linear\"",
+                "0.3",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"going off screen\"",
+                "2080",
+                "320",
+                "\"swingTo\"",
+                "0.3",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"linear\"",
+                "0.3",
+                "",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "Tween",
+                "\"going off screen\"",
+                "2180",
+                "320",
+                "\"swingTo\"",
+                "0.350",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "Tween",
+                "\"character not talking\"",
+                "0.850",
+                "\"swingTo\"",
+                "0.6",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Conversation_Line",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Two_Characters_Speaking",
+                "False",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Third_Character_Appear",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Character_Speaking",
+                "=",
+                "-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "1.8",
+                "",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Conversation_Number",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Character_Name",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Character_Text_Lines",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Conversation_Background",
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Conversation_Icons",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Npc_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Second_Npc_talking",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Smoll_Boi_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Text_Box",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Show the conversation ui",
+      "fullName": "Show the conversation ui",
+      "functionType": "Action",
+      "group": "Text Ui",
+      "name": "Show_Conversation_Ui",
+      "sentence": "Show the conversation ui using _PARAM1_, _PARAM3_, _PARAM5_, _PARAM7_, _PARAM8_, _PARAM10_, _PARAM12_, ",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Conversation_Icons"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Conversation_Icons",
+                "=",
+                "1824",
+                "=",
+                "130"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Conversation_Background",
+                "=",
+                "0",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Conversation_Background",
+                "Tween",
+                "\"fade\"",
+                "160",
+                "\"easeOutCubic\"",
+                "0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Text_Box",
+                "Tween",
+                "\"go here\"",
+                "64",
+                "0",
+                "\"easeTo\"",
+                "0.2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Character_Name",
+                "Tween",
+                "\"go here\"",
+                "96",
+                "35",
+                "\"swingTo\"",
+                "0.2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Character_Text_Lines",
+                "Tween",
+                "\"go here\"",
+                "192",
+                "67",
+                "\"swingTo\"",
+                "0.2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"going on screen\"",
+                "31",
+                "336",
+                "\"swingTo\"",
+                "0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"going on screen\"",
+                "1472",
+                "320",
+                "\"swingTo\"",
+                "0.6",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Character_Name",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Character_Text_Lines",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Conversation_Background",
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Conversation_Icons",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Npc_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Smoll_Boi_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Text_Box",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Set up the ui for conversation ",
+      "fullName": "Set up the ui for conversation ",
+      "functionType": "Action",
+      "group": "Text Ui",
+      "name": "Conversation_Ui_Set_Up",
+      "sentence": "Set up the ui for conversation using _PARAM1_, _PARAM2_, _PARAM3_, _PARAM6_, _PARAM8_, _PARAM11_, _PARAM14_, _PARAM17_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Conversation_Number",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Conversation_Line",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Character_Speaking",
+                "=",
+                "-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Two_Characters_Speaking",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Third_Character_Appear",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Conversation_Background",
+                "2080",
+                "0",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "Conversation_Background",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Conversation_Background",
+                "Resizable",
+                "=",
+                "CameraWidth(\"UI\", 0)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Conversation_Background",
+                "Resizable",
+                "=",
+                "CameraHeight(\"UI\", 0)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Conversation_Background",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Smoll_Boi_Text_Animations",
+                "-737",
+                "336",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "\"107;107;107\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Resizable",
+                "=",
+                "737"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Resizable",
+                "=",
+                "752"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"linear\"",
+                "0.3",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "=",
+                "17"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Npc_Text_Animations",
+                "2080",
+                "320",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "\"107;107;107\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Resizable",
+                "=",
+                "736"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Resizable",
+                "=",
+                "768"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"linear\"",
+                "0.3",
+                "",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "=",
+                "17"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Second_Npc_talking",
+                "2180",
+                "320",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "Tween",
+                "\"character not talking\"",
+                "0.850",
+                "\"swingTo\"",
+                "0.6",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "Resizable",
+                "=",
+                "776"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "Resizable",
+                "=",
+                "768"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "=",
+                "16"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Text_Box",
+                "64",
+                "-290",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Text_Box",
+                "Resizable",
+                "=",
+                "1952"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Text_Box",
+                "Resizable",
+                "=",
+                "288"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Text_Box",
+                "=",
+                "16"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Character_Name",
+                "96",
+                "-255",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "Character_Name",
+                "=",
+                "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetTextAlignment"
+              },
+              "parameters": [
+                "Character_Name",
+                "\"center\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetWrapping"
+              },
+              "parameters": [
+                "Character_Name",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::WrappingWidth"
+              },
+              "parameters": [
+                "Character_Name",
+                "=",
+                "1888"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Character_Name",
+                "=",
+                "18"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Character_Text_Lines",
+                "192",
+                "-223",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::Text::SetFontSize"
+              },
+              "parameters": [
+                "Character_Text_Lines",
+                "=",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetTextAlignment"
+              },
+              "parameters": [
+                "Character_Text_Lines",
+                "\"center\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetWrapping"
+              },
+              "parameters": [
+                "Character_Text_Lines",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::WrappingWidth"
+              },
+              "parameters": [
+                "Character_Text_Lines",
+                "=",
+                "1664"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Character_Text_Lines",
+                "=",
+                "18"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Conversation_Icons",
+                "1824",
+                "-160",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Conversation_Icons",
+                "Resizable",
+                "=",
+                "128"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Conversation_Icons",
+                "Resizable",
+                "=",
+                "128"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Conversation_Icons",
+                "=",
+                "19"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Character_Name",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Character_Text_Lines",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Conversation_Background",
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Opacity",
+          "supplementaryInformation": "OpacityCapability::OpacityBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Conversation_Icons",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Npc_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Second_Npc_talking",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Smoll_Boi_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Text_Box",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Make the third person appear",
+      "fullName": "Make the third person appear",
+      "functionType": "Action",
+      "group": "Text Ui Controls",
+      "name": "Make_third_person_appear",
+      "sentence": "Make the third person appear with _PARAM1_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "=",
+                "2180"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "Tween",
+                "\"character not talking\"",
+                "1256",
+                "500",
+                "\"swingTo\"",
+                "0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"swingTo\"",
+                "0.7",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "\"107;107;107\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Second_Npc_talking",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Make nobody talk",
+      "fullName": "Make nobody talk",
+      "functionType": "Action",
+      "group": "Text Ui Controls",
+      "name": "Make_nobody_talk_OLD",
+      "sentence": "Make nobody talk with _PARAM1_, _PARAM3_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"character not talking\"",
+                "31",
+                "500",
+                "\"swingTo\"",
+                "0.4",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"character not talking\"",
+                "1472",
+                "500",
+                "\"swingTo\"",
+                "0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"swingTo\"",
+                "0.7",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"swingTo\"",
+                "0.7",
+                "",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "\"107;107;107\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "\"107;107;107\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Npc_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Smoll_Boi_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Make both people talk",
+      "fullName": "Make both people talk",
+      "functionType": "Action",
+      "group": "Text Ui Controls",
+      "name": "Make_both_people_talk_OLD",
+      "sentence": "Make both people talk with _PARAM1_, _PARAM3_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"character talking\"",
+                "366",
+                "\"swingTo\"",
+                "0.6",
+                "0.6"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"character not talking\"",
+                "1312",
+                "320",
+                "\"swingTo\"",
+                "0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "1",
+                "\"swingTo\"",
+                "0.7",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "1.050",
+                "\"swingTo\"",
+                "0.7",
+                "",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "\"255;255;255\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Npc_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Smoll_Boi_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Make the second person talk",
+      "fullName": "Make the second person talk",
+      "functionType": "Action",
+      "group": "Text Ui Controls",
+      "name": "Make_the_second_person_talk_OLD",
+      "sentence": "Make the second person talk with _PARAM1_, _PARAM3_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"character not talking\"",
+                "31",
+                "500",
+                "\"swingTo\"",
+                "0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"character not talking\"",
+                "1312",
+                "320",
+                "\"swingTo\"",
+                "0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"swingTo\"",
+                "0.7",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "1.050",
+                "\"swingTo\"",
+                "0.7",
+                "",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "\"107;107;107\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Npc_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Smoll_Boi_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Make the first person talk",
+      "fullName": "Make the first person talk",
+      "functionType": "Action",
+      "group": "Text Ui Controls",
+      "name": "Make_the_first_person_talk_OLD",
+      "sentence": "Make the first person talk with doing _PARAM1_, _PARAM3_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"character talking\"",
+                "366",
+                "\"swingTo\"",
+                "0.6",
+                "0.6"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"character not talking\"",
+                "1472",
+                "500",
+                "\"swingTo\"",
+                "0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "1",
+                "\"swingTo\"",
+                "0.7",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"swingTo\"",
+                "0.7",
+                "",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "\"107;107;107\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Npc_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Smoll_Boi_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Show the text ui",
+      "fullName": "Show the text ui",
+      "functionType": "Action",
+      "group": "Text Ui",
+      "name": "Show_the_text_ui_OLD",
+      "sentence": "Show all of _PARAM1_, _PARAM2_, _PARAM4_, _PARAM6_, _PARAM7_, _PARAM9_, _PARAM10_, ",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "black_shading",
+                "=",
+                "0",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "black_shading",
+                "Tween",
+                "\"fade\"",
+                "160",
+                "\"easeOutCubic\"",
+                "0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "=",
+                "2180"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "=",
+                "2180"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "=",
+                "-737"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Character_Text_Lines",
+                "=",
+                "192",
+                "=",
+                "64"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Character_Name",
+                "=",
+                "64",
+                "=",
+                "32"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "TextBox",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TextBox",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"going on screen\"",
+                "31",
+                "\"swingTo\"",
+                "0.6",
+                "0.6"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"going on screen\"",
+                "1472",
+                "\"swingTo\"",
+                "0.6",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Character_Name",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Character_Text_Lines",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "AutoTyping",
+          "supplementaryInformation": "AutoTyping::AutoTyping",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Npc_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Second_Npc_talking",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Smoll_Boi_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "TextBox",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "black_shading",
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Hide the text ui",
+      "fullName": "Hide the text ui",
+      "functionType": "Action",
+      "group": "Text Ui",
+      "name": "Hide_the_text_ui_OLD",
+      "sentence": "Hide all of _PARAM1_, _PARAM2_, _PARAM3_, _PARAM5_, _PARAM7_, _PARAM9_, _PARAM10_, _PARAM12_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"going off screen\"",
+                "-737",
+                "\"swingFromTo\"",
+                "0.3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "Tween",
+                "\"going off screen\"",
+                "2180",
+                "\"swingFromTo\"",
+                "0.350",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"going off screen\"",
+                "2080",
+                "\"swingFromTo\"",
+                "0.3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"linear\"",
+                "0.3",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Second_Npc_talking",
+                "Tween",
+                "\"character not talking\"",
+                "0.850",
+                "\"swingTo\"",
+                "0.6",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "Tween",
+                "\"growing\"",
+                "0.850",
+                "\"linear\"",
+                "0.3",
+                "",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations",
+                "\"107;107;107\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Npc_Text_Animations",
+                "\"107;107;107\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Conversation_Number",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Conversation_Line",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Third_Character_Appear",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Two_Characters_Speaking",
+                "False",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Character_Speaking",
+                "=",
+                "-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "TextBox",
+                "=",
+                "1472"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Character_Name",
+                "=",
+                "-64"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Character_Text_Lines",
+                "=",
+                "-192"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "black_shading",
+                "Tween",
+                "\"fade\"",
+                "0",
+                "\"swingTo\"",
+                "0.4",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Icons"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.150"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Smoll_Boi_Text_Animations"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Npc_Text_Animations"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Second_Npc_talking"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Character_Name",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Character_Text_Lines",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Npc_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Second_Npc_talking",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Smoll_Boi_Text_Animations",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "TextBox",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "black_shading",
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Icons",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}
