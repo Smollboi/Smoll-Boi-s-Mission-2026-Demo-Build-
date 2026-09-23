@@ -5361,6 +5361,30 @@
         "name": "Beta Falling2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/ironmouse.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ironmouse.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/TheRealSmollBOi.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/TheRealSmollBOi.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "irongolemhead.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "irongolemhead.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -11508,6 +11532,54 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Goober annoyed",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 157,
+                        "y": 269
+                      },
+                      {
+                        "x": 587,
+                        "y": 269
+                      },
+                      {
+                        "x": 587,
+                        "y": 744
+                      },
+                      {
+                        "x": 157,
+                        "y": 744
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "IronMouse",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/TheRealSmollBOi.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -21148,6 +21220,54 @@
           ]
         },
         {
+          "name": "IronMouse",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "irongolemhead.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102,
+                        "y": 89
+                      },
+                      {
+                        "x": 398,
+                        "y": 89
+                      },
+                      {
+                        "x": 398,
+                        "y": 411
+                      },
+                      {
+                        "x": 102,
+                        "y": 411
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "nothing",
           "useMultipleDirections": false,
           "directions": [
@@ -23291,7 +23411,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.38958562738273744,
+        "zoomFactor": 0.6406912462476625,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -145392,7 +145512,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.27962265218393884,
+        "zoomFactor": 2.666737490255132,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -145567,7 +145687,7 @@
           "opacity": 0,
           "persistentUuid": "370bbde7-fc3a-4049-a57f-debadd5449e1",
           "width": 224,
-          "x": 1824,
+          "x": 1856,
           "y": 800,
           "zOrder": 9,
           "numberProperties": [],
@@ -145646,6 +145766,41 @@
           "x": -96,
           "y": -96,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NPC_Collision",
+          "opacity": 0,
+          "persistentUuid": "20926a37-b8a0-4f3a-b617-a040f42f4b33",
+          "width": 224,
+          "x": 1120,
+          "y": 832,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 198,
+          "keepRatio": true,
+          "layer": "",
+          "name": "IronMouse",
+          "persistentUuid": "fdf4e142-81fb-4cf6-8350-6b38eb1b36b0",
+          "width": 80,
+          "x": 1184,
+          "y": 698,
+          "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -146082,6 +146237,67 @@
             }
           ],
           "behaviors": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "IronMouse",
+          "persistentUuid": "e9557891-1edc-411e-aca2-9b7fe5b0e5a9",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/TheRealSmollBOi.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 6
+                          },
+                          {
+                            "x": 381,
+                            "y": 6
+                          },
+                          {
+                            "x": 381,
+                            "y": 868
+                          },
+                          {
+                            "x": 21,
+                            "y": 868
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -146103,6 +146319,9 @@
           },
           {
             "objectName": "NewTiledSprite"
+          },
+          {
+            "objectName": "IronMouse"
           }
         ]
       },
@@ -147379,7 +147598,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "We NEED this so everything can work",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -147389,7 +147607,6 @@
               "colorG": 144,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "MAIN CHARACTER CODE [player 1]",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -147399,7 +147616,6 @@
                   "colorG": 155,
                   "colorR": 155,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Movement 1 [run, slide, double jump, wall jump, wall sliding]",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -151628,7 +151844,6 @@
               "colorG": 2,
               "colorR": 208,
               "creationTime": 0,
-              "folded": true,
               "name": "Conversation code and Conversations",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -151837,7 +152052,6 @@
                   "colorG": 2,
                   "colorR": 208,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Actavite conversation + transtions",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -152280,7 +152494,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Character Text Icon",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -152787,7 +153000,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Who's Speaking code",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -152821,6 +153033,7 @@
                           "comment": "no one talking"
                         },
                         {
+                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -153494,7 +153707,7 @@
                                 "value": "ChangeColor"
                               },
                               "parameters": [
-                                "Npc_Text",
+                                "Iro",
                                 "\"255;255;255\""
                               ]
                             },
@@ -154242,6 +154455,1523 @@
                           ]
                         }
                       ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Conversations",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Ironmouse",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "folded": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanVariable"
+                              },
+                              "parameters": [
+                                "Conversation",
+                                "True",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::And"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "Distance"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "IronMouse",
+                                    "200",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "NPC_Collision",
+                                    "188",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Number",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Line",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Conversation_Number",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Conversation_Line",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Character_Speaking",
+                                "=",
+                                "2"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "Character_Name",
+                                "Text",
+                                "=",
+                                "\"Ironmouse\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "Character_Text_Lines",
+                                "Text",
+                                "=",
+                                "\"Yo what's good it's me ironmouse iconic vtuber on twitch who sang Cry for Me WA WA WA\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Conversation_Npc_Icons",
+                                "Animation",
+                                "=",
+                                "\"IronMouse\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Player_s_Text_Npc",
+                                "Animation",
+                                "=",
+                                "\"happy talk\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Npc_Text",
+                                "Animation",
+                                "=",
+                                "\"IronMouse\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "0.1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CentreCamera"
+                              },
+                              "parameters": [
+                                "",
+                                "SB_Player",
+                                "",
+                                "",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "code to make the player go to a spot [running]"
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation",
+                                    "True",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"LShift\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Flippable"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PosX"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "!=",
+                                    "1984"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Flippable",
+                                    "yes"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Animation",
+                                    "=",
+                                    "\"Walking\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Tween",
+                                    "\"walk here\"",
+                                    "1120",
+                                    "\"linear\"",
+                                    "0.5",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "0.5"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Flippable",
+                                    "no"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Animation",
+                                    "=",
+                                    "\"Idle\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation",
+                                    "True",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"LShift\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Flippable"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PosX"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "!=",
+                                    "1984"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Flippable",
+                                    "no"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Animation",
+                                    "=",
+                                    "\"Walking\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Tween",
+                                    "\"walk here\"",
+                                    "1120",
+                                    "\"linear\"",
+                                    "0.5",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "0.5"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Animation",
+                                    "=",
+                                    "\"Idle\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "code to make the player go to a spot [running]"
+                            },
+                            {
+                              "folded": true,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"LShift\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Flippable"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "PlatformerObject"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation",
+                                    "True",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Animation",
+                                    "=",
+                                    "\"Skidding\""
+                                  ]
+                                }
+                              ],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "PlatformBehavior::MaxSpeed"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "PlatformerObject",
+                                        ">",
+                                        "300"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "PlatformBehavior::MaxSpeed"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "PlatformerObject",
+                                        "-",
+                                        "100"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Wait"
+                                      },
+                                      "parameters": [
+                                        "0.65"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "Flippable",
+                                        "yes"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "Animation",
+                                        "=",
+                                        "\"Walking\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "Tween",
+                                        "\"walk here\"",
+                                        "2816",
+                                        "\"linear\"",
+                                        "1",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Wait"
+                                      },
+                                      "parameters": [
+                                        "1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "Flippable",
+                                        "no"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "Animation",
+                                        "=",
+                                        "\"Idle\""
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"LShift\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Flippable"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "PlatformerObject"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation",
+                                    "True",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "SB_Player",
+                                    "Animation",
+                                    "=",
+                                    "\"Skidding\""
+                                  ]
+                                }
+                              ],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "PlatformBehavior::MaxSpeed"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "PlatformerObject",
+                                        ">",
+                                        "300"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "PlatformBehavior::MaxSpeed"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "PlatformerObject",
+                                        "-",
+                                        "100"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Wait"
+                                      },
+                                      "parameters": [
+                                        "0.65"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "Flippable",
+                                        "no"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "Animation",
+                                        "=",
+                                        "\"Walking\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "Tween",
+                                        "\"walk here\"",
+                                        "1120",
+                                        "\"linear\"",
+                                        "1",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Wait"
+                                      },
+                                      "parameters": [
+                                        "1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                      },
+                                      "parameters": [
+                                        "SB_Player",
+                                        "Animation",
+                                        "=",
+                                        "\"Idle\""
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "Conversation_Number",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Line",
+                                    "=",
+                                    "2"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Name",
+                                    "Text",
+                                    "=",
+                                    "\"Smoll Boi\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Player_Icons",
+                                    "Animation",
+                                    "=",
+                                    "\"Smoll Boi Happy\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Player_s_Text_Npc",
+                                    "Animation",
+                                    "=",
+                                    "\"alt happy talk\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Text_Lines",
+                                    "Text",
+                                    "=",
+                                    "\"HOLY SHIT!!111!!1! IRONMOUSE?!?!?!1//1!??\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Line",
+                                    "=",
+                                    "3"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetNumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Character_Speaking",
+                                    "=",
+                                    "2"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Name",
+                                    "Text",
+                                    "=",
+                                    "\"IronMouse\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Npc_Icons",
+                                    "Animation",
+                                    "=",
+                                    "\"IronMouse\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Player_s_Text_Npc",
+                                    "Animation",
+                                    "=",
+                                    "\"happy talk\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Text_Lines",
+                                    "Text",
+                                    "=",
+                                    "\"Yes smoll boi i am aware you are on this big mission but i need you\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Line",
+                                    "=",
+                                    "4"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetNumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Character_Speaking",
+                                    "=",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Name",
+                                    "Text",
+                                    "=",
+                                    "\"Smoll Boi\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Npc_Icons",
+                                    "Animation",
+                                    "=",
+                                    "\"IronMouse\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Player_s_Text_Npc",
+                                    "Animation",
+                                    "=",
+                                    "\"happy talk\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Text_Lines",
+                                    "Text",
+                                    "=",
+                                    "\"‘Wow you need me?1 for what’\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Line",
+                                    "=",
+                                    "5"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetNumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Character_Speaking",
+                                    "=",
+                                    "2"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Name",
+                                    "Text",
+                                    "=",
+                                    "\"IronMouse\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Npc_Icons",
+                                    "Animation",
+                                    "=",
+                                    "\"IronMouse\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Player_s_Text_Npc",
+                                    "Animation",
+                                    "=",
+                                    "\"happy talk\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Text_Lines",
+                                    "Text",
+                                    "=",
+                                    "\"I need you to buy my fortnite skin and get those dubs please\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Line",
+                                    "=",
+                                    "6"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetNumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Character_Speaking",
+                                    "=",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Name",
+                                    "Text",
+                                    "=",
+                                    "\"Smoll Boi\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Npc_Icons",
+                                    "Animation",
+                                    "=",
+                                    "\"IronMouse\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Player_s_Text_Npc",
+                                    "Animation",
+                                    "=",
+                                    "\"oops\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "Character_Text_Lines",
+                                    "Text",
+                                    "=",
+                                    "\"fuh naw i'm freaking broke\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Line",
+                                    "=",
+                                    "7"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetBooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation",
+                                    "False",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetBooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "CutsceneBorder_UI",
+                                    "False",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetBooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "Cutscene",
+                                    "False",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetNumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Number",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetNumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Line",
+                                    "=",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "0.105"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CentreCamera"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "SB_Player",
+                                    "",
+                                    "",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetBooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "Player_Freeze",
+                                    "False",
+                                    "1"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "No one is here Conversation",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::And"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Line",
+                                    "=",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "NumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Conversation_Number",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "Character_Text_Lines",
+                                    "Text",
+                                    "=",
+                                    "\"wow, either you bugged the code or there's no one here but their isn't a real conversation to be had at the momment ...\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Character_Speaking",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "Character_Name",
+                                "Text",
+                                "=",
+                                "\"Smoll Boi\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "Character_Text_Lines",
+                                "Text",
+                                "=",
+                                "\"wow, either you bugged the code or there's no one here but their isn't a real conversation to be had at the momment ...\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Conversation_Player_Icons",
+                                "Animation",
+                                "=",
+                                "\"Smoll Boi Bored\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Player_s_Text_Npc",
+                                "Animation",
+                                "=",
+                                "\"happy talk\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Npc_Text",
+                                "Animation",
+                                "=",
+                                "\"nothing\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "Cutscene",
+                                "True",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "Player_Freeze",
+                                "True",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::And"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "TextContainerCapability::TextContainerBehavior::Value"
+                                  },
+                                  "parameters": [
+                                    "Character_Text_Lines",
+                                    "Text",
+                                    "=",
+                                    "\"wow, either you bugged the code or there's no one here but their isn't a real conversation to be had at the momment ...\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AutoTyping::AutoTyping::IsFinished"
+                                  },
+                                  "parameters": [
+                                    "Character_Text_Lines",
+                                    "AutoTyping",
+                                    "="
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "KeyFromTextJustPressed"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"z\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "Conversation",
+                                "False",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "Cutscene",
+                                "False",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "Player_Freeze",
+                                "False",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Conversation_Number",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Conversation_Line",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "CutsceneBorder_UI",
+                                "False",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
                     }
                   ],
                   "parameters": []
@@ -156216,6 +157946,18 @@
           "parameters": []
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "code to make the player go to a spot [running]"
+        },
+        {
           "colorB": 27,
           "colorG": 2,
           "colorR": 208,
@@ -156628,7 +158370,6 @@
               "colorG": 2,
               "colorR": 208,
               "creationTime": 0,
-              "folded": true,
               "name": "Black borders",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -157478,6 +159219,7 @@
               "comment": "dev keys"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -202014,7 +203756,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2279592653420944,
+        "zoomFactor": 0.48879592110659137,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -202263,8 +204005,8 @@
           "opacity": 0,
           "persistentUuid": "715ee2ca-e3b5-4de7-83a3-8ef8aec41df6",
           "width": 224,
-          "x": -480,
-          "y": -352,
+          "x": -489,
+          "y": -354,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -208747,7 +210489,6 @@
               "colorG": 144,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Controls code",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -208757,6 +210498,7 @@
                   "colorG": 155,
                   "colorR": 155,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Movement 1 [run, slide, double jump, wall jump, wall sliding]",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -213521,7 +215263,6 @@
               "colorG": 2,
               "colorR": 208,
               "creationTime": 0,
-              "folded": true,
               "name": "We NEED this so everything can work",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -213531,7 +215272,6 @@
                   "colorG": 155,
                   "colorR": 155,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "place holder",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -213752,7 +215492,6 @@
                           "comment": "code to go to the next line"
                         },
                         {
-                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -216145,6 +217884,7 @@
                           "colorG": 176,
                           "colorR": 74,
                           "creationTime": 0,
+                          "folded": true,
                           "name": "",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
@@ -221057,7 +222797,6 @@
                               "colorG": 176,
                               "colorR": 74,
                               "creationTime": 0,
-                              "folded": true,
                               "name": "Smoll boi and cassie",
                               "source": "",
                               "type": "BuiltinCommonInstructions::Group",
@@ -221098,7 +222837,7 @@
                                           },
                                           "parameters": [
                                             "SB_Player",
-                                            "NPC_Collision",
+                                            "iNPC_Collision",
                                             "188",
                                             "",
                                             ""
