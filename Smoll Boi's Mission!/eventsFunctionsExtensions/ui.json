@@ -1,0 +1,1117 @@
+{
+  "author": "",
+  "category": "",
+  "dimension": "",
+  "extensionNamespace": "",
+  "fullName": "Ui",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "Ui",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "Originally automatically extracted from events of the project",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [
+    {
+      "name": "Player_Freeze",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "name": "Reached_The_End",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "eventsFunctions": [
+    {
+      "description": "Show the other end of level ui things",
+      "fullName": "Show the other end of level ui things",
+      "functionType": "Action",
+      "group": "UI",
+      "name": "Show_The_Other_End_Of_Level_Ui_Things",
+      "sentence": "Show the other end of level ui things using _PARAM1_, _PARAM3_, _PARAM5_, _PARAM7_, _PARAM9_, _PARAM11_, _PARAM13_, _PARAM16_, _PARAM18_, ",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Level_Name",
+                "Level_Score",
+                "2087",
+                "257",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+              },
+              "parameters": [
+                "Level_Score",
+                "Tween",
+                "\"spin to win\"",
+                "-6",
+                "\"easeFromTo\"",
+                "0.4",
+                "0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Level_Score",
+                "Tween",
+                "\"go in\"",
+                "922",
+                "290",
+                "\"bounce\"",
+                "0.8",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "ScoreCounter",
+                "=",
+                "-3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "ScoreCounter",
+                "Tween",
+                "\"go in\"",
+                "1455",
+                "248",
+                "\"bounce\"",
+                "0.7",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Level_Name",
+                "Deaths",
+                "2086",
+                "422",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Deaths",
+                "=",
+                "-5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Deaths",
+                "Tween",
+                "\"go in\"",
+                "1070",
+                "489",
+                "\"bounce\"",
+                "0.8",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "death_counter",
+                "=",
+                "-3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "death_counter",
+                "Tween",
+                "\"go in\"",
+                "1622",
+                "505",
+                "\"bounce\"",
+                "0.7",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Level_Name",
+                "Timer_Score",
+                "2088",
+                "624",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Timer_Score",
+                "=",
+                "-8"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Timer_Score",
+                "Tween",
+                "\"go in\"",
+                "1256",
+                "655",
+                "\"bounce\"",
+                "0.7",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Player_1_End_Of_Level_Thing",
+                "Tween",
+                "\"going on screen\"",
+                "32",
+                "352",
+                "\"swingTo\"",
+                "0.8",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Level_Name",
+                "Timer",
+                "2103",
+                "712",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Timer",
+                "=",
+                "-3"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Timer",
+                "Text",
+                "=",
+                "ToString(TimerElapsedTime(\"Player's time\"))"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Timer",
+                "Tween",
+                "\"go in\"",
+                "1673",
+                "740",
+                "\"bounce\"",
+                "0.7",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.6"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Level_Name",
+                "Next_Button",
+                "2816",
+                "896",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Next_Button",
+                "Tween",
+                "\"go in\"",
+                "1664",
+                "896",
+                "\"swingTo\"",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Level_Name",
+                "Replay_Button",
+                "2816",
+                "896",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Replay_Button",
+                "Tween",
+                "\"go in\"",
+                "1216",
+                "896",
+                "\"swingTo\"",
+                "0.5",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Deaths",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Level_Score",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Next_Button",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Player_1_End_Of_Level_Thing",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Replay_Button",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "ScoreCounter",
+          "supplementaryInformation": "ScoreCounter::ScoreCounter",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Timer",
+          "supplementaryInformation": "TextObject::Text",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Text",
+          "supplementaryInformation": "TextContainerCapability::TextContainerBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Timer_Score",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "death_counter",
+          "supplementaryInformation": "ScoreCounter::ScoreCounter",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "make the tv shading and frame appear",
+      "fullName": "Show the tv ui",
+      "functionType": "Action",
+      "group": "UI",
+      "name": "Show_Tv_Ui",
+      "sentence": "Make the tv ui using _PARAM1_, _PARAM5_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Tv_Screen_Ui",
+                "Tv_Ui_Screen",
+                "0",
+                "0",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Tween",
+                "\"grow\"",
+                "5",
+                "\"elastic\"",
+                "0.001",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Animation",
+                "=",
+                "\"new close\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Tv_Screen_Ui",
+                "Tv_Ui_Screen_Shading",
+                "64",
+                "32",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Tv_Ui_Screen_Shading",
+                "=",
+                "0",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Tv_Ui_Screen_Shading",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Tv_Ui_Screen_Shading",
+                "Resizable",
+                "=",
+                "CameraWidth(\"UI\", 1)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Tv_Ui_Screen_Shading",
+                "Resizable",
+                "=",
+                "1088"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Tween",
+                "\"grow into the middle\"",
+                "1",
+                "\"easeFrom\"",
+                "0.4",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Animation",
+                "=",
+                "\"new opening\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Tv_Ui_Screen",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Animation",
+          "supplementaryInformation": "AnimatableCapability::AnimatableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tv_Ui_Screen_Shading",
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "make the tv shading and frame appear",
+      "fullName": "Show the tv ui OLD",
+      "functionType": "Action",
+      "group": "UI",
+      "name": "Show_Tv_Ui2",
+      "sentence": "Make the tv ui using _PARAM1_, _PARAM5_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Tv_Screen_Ui",
+                "Tv_Ui_Screen",
+                "-128",
+                "-96",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Tween",
+                "\"grow\"",
+                "5",
+                "\"elastic\"",
+                "0.010",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Resizable",
+                "=",
+                "1984"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Animation",
+                "=",
+                "\"new close\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Tv_Screen_Ui",
+                "Tv_Ui_Screen_Shading",
+                "64",
+                "32",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "=",
+                "448",
+                "=",
+                "224"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Tv_Ui_Screen_Shading",
+                "=",
+                "0",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Tv_Ui_Screen_Shading",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Tv_Ui_Screen_Shading",
+                "Resizable",
+                "=",
+                "CameraWidth(\"UI\", 1)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Tv_Ui_Screen_Shading",
+                "Resizable",
+                "=",
+                "1088"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Tween",
+                "\"grow into the middle\"",
+                "1.82",
+                "\"easeFromTo\"",
+                "0.5",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "=",
+                "CameraCenterX(\"UI\", 0)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Resizable",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Tv_Ui_Screen",
+                "Animation",
+                "=",
+                "\"new opening\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "Tv_Ui_Screen",
+          "supplementaryInformation": "Sprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Animation",
+          "supplementaryInformation": "AnimatableCapability::AnimatableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tv_Ui_Screen_Shading",
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Spawn the white flash out",
+      "fullName": "Spawn white flash out",
+      "functionType": "Action",
+      "group": "UI",
+      "name": "Spawn_White_Flash_Out",
+      "sentence": "Spawn white flash out with _PARAM1_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Tv_Screen_Ui",
+                "White_Flash",
+                "0",
+                "0",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "White_Flash",
+                "Resizable",
+                "=",
+                "2080"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "White_Flash",
+                "Resizable",
+                "=",
+                "1088"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "White_Flash",
+                "Tween",
+                "\"go away\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "White_Flash",
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Spawn the white flash in",
+      "fullName": "Spawn white flash in",
+      "functionType": "Action",
+      "group": "UI",
+      "name": "Spawn_White_Flash_In",
+      "sentence": "Spawn white flash in with _PARAM1_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "Tv_Screen_Ui",
+                "White_Flash",
+                "0",
+                "0",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "White_Flash",
+                "Resizable",
+                "=",
+                "2080"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "White_Flash",
+                "Resizable",
+                "=",
+                "1088"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "White_Flash",
+                "Opacity",
+                "=",
+                "255"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "White_Flash",
+                "Tween",
+                "\"go away\"",
+                "0",
+                "\"linear\"",
+                "1",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "White_Flash",
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "description": "",
+          "name": "Resizable",
+          "supplementaryInformation": "ResizableCapability::ResizableBehavior",
+          "type": "behavior"
+        },
+        {
+          "description": "",
+          "name": "Tween",
+          "supplementaryInformation": "Tween::TweenBehavior",
+          "type": "behavior"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}

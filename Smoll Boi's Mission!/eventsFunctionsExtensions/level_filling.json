@@ -1,0 +1,1202 @@
+{
+  "author": "",
+  "category": "",
+  "dimension": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "Level_Filling",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
+  "eventsFunctions": [],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": [
+    {
+      "areaMaxX": 5856,
+      "areaMaxY": 2336,
+      "areaMaxZ": 1,
+      "areaMinX": 0,
+      "areaMinY": 0,
+      "areaMinZ": 0,
+      "defaultName": "",
+      "description": "",
+      "fullName": "",
+      "isUsingLegacyInstancesRenderer": false,
+      "name": "V1_4_Testing_room_filling",
+      "objects": [
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Floor_Filling",
+          "persistentUuid": "cea950fd-9aab-4a92-bc8b-21f373cfe65a",
+          "texture": "Tiles\\floor filling.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            }
+          ]
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Floor_Filling"
+          }
+        ]
+      },
+      "objectsGroups": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "03131e13-2516-4e40-b370-176918906888",
+          "width": 1056,
+          "x": 4800,
+          "y": 96,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 96,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "603affc1-54ed-46cd-8fa5-fd3e32f25cf5",
+          "width": 2144,
+          "x": 3712,
+          "y": 0,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "64e2f4d6-a990-458a-a05d-572417eb827c",
+          "width": 992,
+          "x": 4864,
+          "y": 160,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1344,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "ffe795d2-331b-4b04-bf28-234af737ab92",
+          "width": 64,
+          "x": 5792,
+          "y": 224,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 288,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "0668a963-6957-44a6-97fc-26f215b1eca1",
+          "width": 1376,
+          "x": 3360,
+          "y": 512,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 384,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "3045e0ed-eda8-4ba0-8b59-80df0a9d2d06",
+          "width": 3488,
+          "x": 224,
+          "y": 0,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 96,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "67f3e274-43e5-465b-809b-c1276e136e01",
+          "width": 1952,
+          "x": 1760,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "54537eef-4e66-41cd-bfff-bc452c86fd3d",
+          "width": 2752,
+          "x": 1760,
+          "y": 480,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "cf875f5f-0ef7-4ed7-abab-c22de38c57c0",
+          "width": 448,
+          "x": 2912,
+          "y": 512,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "793635ca-fa86-4d30-8e48-198ce1cd7ec5",
+          "width": 384,
+          "x": 2976,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 224,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "88dbe8b2-5313-409e-a221-fd448815e8b1",
+          "width": 64,
+          "x": 2848,
+          "y": 512,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "d14300f9-e0d2-48b0-97be-9db125b9440d",
+          "width": 96,
+          "x": 1664,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1728,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "5975b4d2-545d-467f-ac99-47a9bbcf6244",
+          "width": 224,
+          "x": 0,
+          "y": 0,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 928,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "9d3f53b7-fee2-497c-a5f3-e5b9b31fc363",
+          "width": 448,
+          "x": 224,
+          "y": 800,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 352,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "79ae47cd-af9d-4e34-8555-42ed96b5eebf",
+          "width": 1568,
+          "x": 2528,
+          "y": 1248,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 320,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "761abec1-e805-4643-8baf-fee68bf7f921",
+          "width": 608,
+          "x": 1920,
+          "y": 1280,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 320,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "71d6c41c-c1de-4fd5-bf33-5dec1ca3decf",
+          "width": 1216,
+          "x": 4096,
+          "y": 1248,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 736,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "da726712-6afb-4620-9d6d-18d7b8c71451",
+          "width": 224,
+          "x": 5312,
+          "y": 832,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 384,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "58c19125-fdb6-49fa-bbe3-d1f8b41144cf",
+          "width": 608,
+          "x": 5248,
+          "y": 1952,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "a7ab4e21-eb1b-4e0a-ac9a-603befebccd0",
+          "width": 448,
+          "x": 3424,
+          "y": 1984,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 224,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "73c4ea7d-2bd3-4ea0-9f84-8e2898db23f0",
+          "width": 3872,
+          "x": 0,
+          "y": 2112,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "0970dc92-e04e-43f2-9f27-5e9691cb2def",
+          "width": 1056,
+          "x": 0,
+          "y": 2048,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "5e49a965-a934-4027-829f-c5d2dc2425a1",
+          "width": 1472,
+          "x": 0,
+          "y": 2080,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 96,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "c74322ed-2011-4568-be49-bdec1f7ae174",
+          "width": 64,
+          "x": 3360,
+          "y": 2016,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "93edfc61-840f-496e-a035-06c5a2320ce3",
+          "width": 928,
+          "x": 2432,
+          "y": 2080,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_Filling",
+          "persistentUuid": "61720626-985a-487e-b3a9-d3718b9af22d",
+          "width": 832,
+          "x": 2528,
+          "y": 2048,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.15585524875825998,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      },
+      "eventsFunctions": [],
+      "propertyDescriptors": [],
+      "propertiesFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "variants": []
+    },
+    {
+      "areaMaxX": 1096,
+      "areaMaxY": 1395,
+      "areaMaxZ": 1,
+      "areaMinX": 0,
+      "areaMinY": 0,
+      "areaMinZ": 0,
+      "defaultName": "",
+      "description": "",
+      "fullName": "",
+      "isUsingLegacyInstancesRenderer": false,
+      "name": "TitleScreenTvUI",
+      "objects": [
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "white",
+          "persistentUuid": "7de0ee2a-a980-4f7f-be6f-54c15582f612",
+          "texture": "NewTiledSprite8",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Text_Box_size_test",
+          "persistentUuid": "4f30ec07-a4e2-4a54-91d5-efbed1ac0f31",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite124",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 0
+                          },
+                          {
+                            "x": 442,
+                            "y": 0
+                          },
+                          {
+                            "x": 442,
+                            "y": 198
+                          },
+                          {
+                            "x": 5,
+                            "y": 198
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "cloud_background_size_test",
+          "persistentUuid": "64006387-8b3c-4eff-a549-921e67e8a504",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite121",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 864,
+                            "y": 0
+                          },
+                          {
+                            "x": 864,
+                            "y": 320
+                          },
+                          {
+                            "x": 0,
+                            "y": 320
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "cassie_box_size_test",
+          "persistentUuid": "f1f9b6fb-51c5-466a-a615-ff04c8ea83f3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite126",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 5
+                          },
+                          {
+                            "x": 271,
+                            "y": 5
+                          },
+                          {
+                            "x": 271,
+                            "y": 307
+                          },
+                          {
+                            "x": 8,
+                            "y": 307
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Smoll_Boi_size_test_",
+          "persistentUuid": "e0cba415-df36-416f-9c66-e09abfb44171",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"NewSprite2\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":256,\\\"width\\\":256,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 3\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"NewSprite114\"],\"name\":\"NewSprite2\"}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite114",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 7
+                          },
+                          {
+                            "x": 249,
+                            "y": 7
+                          },
+                          {
+                            "x": 249,
+                            "y": 233
+                          },
+                          {
+                            "x": 15,
+                            "y": 233
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Forest_size_test",
+          "persistentUuid": "78058e08-6f37-4b82-94af-6d71ee3d2de8",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "Forest_size_test",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Forest_size_test4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 18
+                          },
+                          {
+                            "x": 864,
+                            "y": 18
+                          },
+                          {
+                            "x": 864,
+                            "y": 576
+                          },
+                          {
+                            "x": 0,
+                            "y": 576
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Floor_size_test",
+          "persistentUuid": "d8b83480-70c0-413a-97dc-12fa47b2323b",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite125",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 4
+                          },
+                          {
+                            "x": 992,
+                            "y": 4
+                          },
+                          {
+                            "x": 992,
+                            "y": 448
+                          },
+                          {
+                            "x": 0,
+                            "y": 448
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Floor_size_test"
+          },
+          {
+            "objectName": "Forest_size_test"
+          },
+          {
+            "objectName": "Smoll_Boi_size_test_"
+          },
+          {
+            "objectName": "cassie_box_size_test"
+          },
+          {
+            "objectName": "cloud_background_size_test"
+          },
+          {
+            "objectName": "Text_Box_size_test"
+          },
+          {
+            "objectName": "white"
+          }
+        ]
+      },
+      "objectsGroups": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "instances": [
+        {
+          "angle": 348,
+          "customSize": true,
+          "depth": 1,
+          "height": 417,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Floor_size_test",
+          "persistentUuid": "6091aa5a-d87b-4367-bef0-4dab7a729c9e",
+          "width": 864,
+          "x": 198.11912503650956,
+          "y": 893.4513370784487,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 348,
+          "customSize": true,
+          "depth": 1,
+          "height": 576,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Forest_size_test",
+          "persistentUuid": "cd2bc5b3-8254-416a-aa95-c9fc2e38d3de",
+          "width": 864,
+          "x": 118.11912503650956,
+          "y": 427.4513370784486,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 348,
+          "customSize": true,
+          "depth": 1,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Smoll_Boi_size_test_",
+          "persistentUuid": "ee8501e0-e5e5-4890-8fd6-dcccc193c11a",
+          "width": 256,
+          "x": 306.11912503650956,
+          "y": 681.4513370784487,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 348,
+          "customSize": true,
+          "depth": 1,
+          "height": 320,
+          "keepRatio": true,
+          "layer": "",
+          "name": "cassie_box_size_test",
+          "persistentUuid": "407bfa90-9484-433a-8407-f0ab843d205b",
+          "width": 288,
+          "x": 30.11912503650956,
+          "y": 101.4513370784486,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 348,
+          "customSize": true,
+          "depth": 1,
+          "height": 352,
+          "keepRatio": true,
+          "layer": "",
+          "name": "cloud_background_size_test",
+          "persistentUuid": "990e1a77-1d52-4ab9-a27f-76dc294902b9",
+          "width": 928,
+          "x": 76.11912503650956,
+          "y": 346.4513370784486,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 348,
+          "customSize": true,
+          "depth": 1,
+          "height": 224,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Text_Box_size_test",
+          "persistentUuid": "5879fd30-f8d9-4d0f-af16-13a43438e3dd",
+          "width": 480,
+          "x": 297.11912503650956,
+          "y": 47.4513370784486,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 348,
+          "customSize": true,
+          "depth": 1,
+          "height": 448,
+          "keepRatio": true,
+          "layer": "",
+          "name": "white",
+          "persistentUuid": "95f8275f-3f32-4c79-a487-3ecf21d9c1a2",
+          "width": 896,
+          "x": 132.11912503650956,
+          "y": 566.4513370784487,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.485423474893244,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      },
+      "eventsFunctions": [],
+      "propertyDescriptors": [],
+      "propertiesFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "variants": []
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "b": 255,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Tv_32Mode",
+  "name": "Tv Mode",
+  "r": 247,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 249,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.4913877545329371,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1088,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Tv_Ui_Screen",
+      "persistentUuid": "83162090-c2b5-417a-8cfd-db1231eaa1be",
+      "width": 1920,
+      "x": -1357,
+      "y": 328,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1080,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tv_Ui_Screen",
+      "persistentUuid": "15681bda-5f81-4462-84ed-f9e52424df46",
+      "width": 1924,
+      "x": 0,
+      "y": 0,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 964,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Test",
+      "persistentUuid": "f7e69cc4-492d-437e-935e-10ea2c37c52e",
+      "width": 1841,
+      "x": 40,
+      "y": 40,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "Test",
+      "type": "Video::VideoObject",
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "CRT",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 80,
+            "animationSpeed": 1,
+            "curvature": 1,
+            "lineContrast": 0.25,
+            "lineWidth": 1,
+            "noise": 0.3,
+            "noiseSize": 1,
+            "padding": 0,
+            "vignetting": 0.3,
+            "vignettingAlpha": 1,
+            "vignettingBlur": 0.3
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "verticalLine": false
+          }
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": true
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "opacity": 255,
+        "loop": true,
+        "volume": 100,
+        "videoResource": "..\\..\\..\\Videos\\Screen Recordings\\Screen Recording 2026-03-02 203322.mp4"
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "folderName": "NewFolder",
+        "children": [
+          {
+            "objectName": "Test"
+          }
+        ]
+      },
+      {
+        "objectName": "NewSprite"
+      }
+    ]
+  },
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Dev Keys",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Escape\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Num1\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Num2\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Num3\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Splash Screen/Game Messages\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Num4\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AdvancedWindow::Maximize"
+              },
+              "parameters": [
+                "no",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetWindowSize"
+              },
+              "parameters": [
+                "",
+                "750",
+                "422",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "CenterWindow"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Video::Play"
+          },
+          "parameters": [
+            "Test"
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "AdvancedJump",
+      "type": "AdvancedJump::AdvancedJump"
+    },
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "AutoTyping",
+      "type": "AutoTyping::AutoTyping"
+    },
+    {
+      "name": "DrawPathfinding",
+      "type": "DrawPathfinding::DrawPathfinding"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FPSDisplayer",
+      "type": "FPS::FPSDisplayer"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "HedgehogCharacter",
+      "type": "HedgehogPlatformer::HedgehogCharacter"
+    },
+    {
+      "name": "HedgehogCharacterRolling",
+      "type": "HedgehogPlatformer::HedgehogCharacterRolling"
+    },
+    {
+      "name": "HorizontalDash",
+      "type": "AdvancedJump::HorizontalDash"
+    },
+    {
+      "name": "MagneticEffect",
+      "type": "MagneticEffect::MagneticEffect"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
+      "name": "PlatformerCharacterAnimator",
+      "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator"
+    },
+    {
+      "name": "PlatformerConfigurationStack",
+      "type": "AdvancedJump::PlatformerConfigurationStack"
+    },
+    {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RemapForPlatformer",
+      "type": "BehaviorRemapper::RemapForPlatformer"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "SpriteRecolorizer",
+      "type": "Recolorizer::SpriteRecolorizer"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "WallJump",
+      "type": "AdvancedJump::WallJump"
+    },
+    {
+      "name": "cursor",
+      "type": "MouseHelper::cursor"
+    }
+  ]
+}
